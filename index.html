@@ -333,6 +333,7 @@ ALL RIGHTS RESERVED | &copy; 2025
 
 <script>
 //let hamburgerBtn = document.getElementsByClassName('hamburger')[0]
+let bodyVar = document.querySelector('body');
 let hamburgerBtn = document.getElementById('hamburger');
 let dash1 = document.getElementById('dash1');
 let dash2 = document.getElementById('dash2');
@@ -344,6 +345,7 @@ let isOpen = true;
 function sayHello(){
   //alert("Hello and welcome!")
   if(isOpen){
+    bodyVar.style.position = "fixed"
     sideBar.style.display = 'block';
     sideBar.style.position = 'fixed';
     sideBar.style.marginTop = '0'

@@ -22,11 +22,11 @@ As someone passionate about tech for good, I created this donation landing page 
 
 ## 📷 Preview
 
-![Landing Page Screenshot](./nyc_screen.jpg)
+Landing Page: https://github.com/Ibraaahyyym/nyc-mesh-community-site
 
 ---
 
 ## ❤️ Acknowledgements
 
-- [NYC Mesh](https://www.nycmesh.net/)
+- [NYC Mesh]
 - Everyone working to make internet access a human right

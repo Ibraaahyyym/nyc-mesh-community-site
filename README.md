@@ -21,6 +21,7 @@ As someone passionate about tech for good, I created this donation landing page 
 - JavaScript
 
 ## 📷 Preview
+https://github.com/Ibraahyyymnyc-mesh-community-site/mobile_screenshot.jpg
 
 Landing Page: https://github.com/Ibraaahyyym/nyc-mesh-community-site
 

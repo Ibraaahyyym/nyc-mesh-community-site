@@ -5,6 +5,7 @@
 <title>nyc mesh</title>
 <script src="https://js.paystack.co/v1/inline.js"></script>
 
+
 <style>
   body{
    min-width: ;
@@ -12,7 +13,6 @@
    margin-right:0;
   }
 
- 
   *{
    margin: 0;
    padding: 0;
@@ -27,6 +27,7 @@
   }
 
 .header img{
+   display: inline;
    width: 50px;
    height: 50px;
    margin-top:10px;
@@ -37,7 +38,7 @@
 
  .hamburger{
    margin-right: 10px;
-   margin-top: 5px;
+   margin-top: 13px;
    margin-bottom: 5px;
    /*border: 2px solid gray;*/
    width: 50px;
@@ -145,6 +146,7 @@
  display: flex;
  justify-content: space-around;
  width:100vw;
+ padding-top: 20px;
  /*original value : space-between*/
  /*flex-wrap: wrap;*/
  background-color: #204056;
@@ -189,11 +191,12 @@
  #logo-text{
   color: white;
   font-size: 20px;
-  /*position: relative;*/
-  /*top: 19px;*/
-  /*left: -55px;*/
-  margin-top:19px;
-  margin-left:;
+  position: relative;
+  top: -24px;
+  left: 5px;
+  margin-top: ;
+  margin-left:2px;
+  display:inline;
  }
 
  .donate-section{
@@ -209,13 +212,13 @@
 <body>
 
 <div id="update">Network status updates</div>
-<div class="header">
-<img src="./nyc_mesh.png" style=""/><span id="logo-text">NYC Mesh</span>
-  <div class="hamburger" id="hamburger">
-    <span id="dash1"><strong>___</strong></span>
-    <span id="dash2"><strong>___</strong></span>
-    <span id="dash3"><strong>___</strong></span>
-  </div>
+<div class="header" id="header-section">
+  <div><img src="./nyc_mesh.png" style=""/><span id="logo-text">NYC Mesh</span></div>
+    <div class="hamburger" id="hamburger">
+      <span id="dash1"><strong>___</strong></span>
+      <span id="dash2"><strong>___</strong></span>
+      <span id="dash3"><strong>___</strong></span>
+    </div>
 </div>
 <!--<hr style="color: red;">-->
 
@@ -281,11 +284,13 @@
   <br><br>
 </div>
 
+<br><br>rrr
 
-
-<div class="footer">
+<div class="footer"><br>
+<hr>
   <div class="left-footer">
     <!--<p>Product & solution</p>-->
+   
     <p><b>Company</b></p>
     <br>
     <p><a href="#">About</a></p>
@@ -306,7 +311,7 @@
     <p><a href="#">Videos</a></p>
     <p><a href="#">Workspaces</a></p>
 
-    
+<hr>    
   </div>
   <div class="right-footer">
     <p><b>Plans</b></p>
@@ -316,7 +321,6 @@
     <p><a href="#">For business<a></p>
     <p><a href="#">Discount<a></p>
     <br><br>
-
     <p><b>Community</b></p>
     <br>
     <p><a href="#">Visit community</a></p>
@@ -325,7 +329,6 @@
     <p><a href="#">Learners stories</a></p>
   </div>
 </div>
-
 <div style="color: white; background-color: black; padding-left:; text-align:center;">
 ALL RIGHTS RESERVED | &copy; 2025
 </div>
@@ -344,12 +347,12 @@ let isOpen = true;
 function sayHello(){
   //alert("Hello and welcome!")
   if(isOpen){
+    bodyVar.style.position = "fixed";
     sideBar.style.display = 'block';
     sideBar.style.position = 'fixed';
     sideBar.style.marginTop = '0';
     mainSection.style.display = 'none';
     hamburger.style.backgroundColor = "grey" ;
-    bodyVar.style.position = 'fixed';
     //dash1.innerHTML = " "
     //dash2.innerHTML = "X"
     //dash3.innerHTML = " "
@@ -360,6 +363,7 @@ function sayHello(){
     isOpen = false;
   }else if(!isOpen){
     //sideBar.style.display = 'none';
+    bodyVar.style.position = "relative";
     sideBar.style.display = 'none';
     mainSection.style.display = 'block';
     //hamburger.style.border = '1px solid red';
@@ -434,4 +438,5 @@ let password;
 
 </script>
 </body>
-</html>
+  </html>
+                       
